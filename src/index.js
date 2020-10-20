@@ -1,5 +1,4 @@
 module.exports = function toReadable (number) {
-  function toReadable (number) {
     let res = [];
     let units = {
      0 : 'zero',
@@ -46,11 +45,10 @@ module.exports = function toReadable (number) {
              number = number - Math.floor(number/10)*10;
          }
             
-        
            if (number != 0) {
      res.push(units[number]);
    }    
  
      return res.join(' ');   
- }
+ 
 }
